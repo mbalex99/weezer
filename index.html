@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 
   <body>
   
-    <div id="wrapper">
+    <div id="wrapper" ng-controller="homeController">
       
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
@@ -32,7 +32,7 @@
         <div class="content-header">
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            Weezer for AngularJS
+            {{helloWorldText}}
           </h1>
         </div>
         <!-- Keep all page content within the page-content inset div! -->
@@ -55,6 +55,9 @@
     <script src="/js/vendor/angular-route.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
     <!-- Put this into a custom JavaScript file to make things more organized -->
+
+    <script src="/js/app.js"></script>
+
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
