@@ -32,14 +32,20 @@
         <div class="content-header">
           <h1>
             <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
-            {{helloWorldText}}
+            Hello World Text Static
           </h1>
+          <a ng-click="didButtonClick(buttonName)">{{buttonName}} </a>
         </div>
         <!-- Keep all page content within the page-content inset div! -->
         <div class="page-content inset">
           <div class="row">
             <div class="col-md-12">
               <p class="lead">This is a simple tutorial for AngularJs. This is where our content will go</p>
+
+              <ul ng-repeat="person in people">
+                <li>{{person.name}} {{person.age}}</li>
+              </ul>
+
             </div>
           </div>
         </div>
