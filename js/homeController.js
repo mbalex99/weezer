@@ -1,20 +1,20 @@
-app.controller('homeController', function($scope){
+app.controller('homeController', function($scope, tickerService){
 
 	$scope.title = "Welcome to the home page";
 
-	$scope.people = [
-		{
-			name: "Max",
-			age: 23
-		},
-		{
-			name: "Mary",
-			age: 90
-		},
-		{
-			name: "John",
-			age: 12
-		}
-	];
+
+	$scope.tickerSymbol = "";
+
+	$scope.fetch = function(tickerSymbol){
+
+		tickerService.getStockQuote(tickerSymbol)
+			.then(function(data){
+				$scope.result = data;
+			}, function(error){
+				alert('rejected! something went wrong');
+			});
+
+	};
+
 
 });

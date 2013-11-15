@@ -10,8 +10,13 @@
         <div class="page-content inset">
           <div class="row">
             <div class="col-md-12">
-              <p class="lead">This is a simple tutorial for AngularJs. This is where our content will go</p>
+              <p>{{tickerSymbol}}</p>
+              <input text="text" ng-model="tickerSymbol"/>
+              <a ng-click="fetch(tickerSymbol)">Fetch</a>
 
+              <ul ng-repeat="price in result">
+                <li>{{price.price}}</li>
+              </ul>
             </div>
           </div>
         </div>
