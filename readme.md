@@ -1,4 +1,4 @@
-This is the [Markit On Demand Json Api](http://dev.markitondemand.com/)
+
 
 
 Try to run this website locally under an HTTP Server 
@@ -16,3 +16,11 @@ If you have python
 
 
 Choose your preferred port!
+
+-----------------------------------------------------------------------
+
+This is the [Markit On Demand Json Api](http://dev.markitondemand.com/)
+
+To query for a specific stock symbol follow this pattern
+
+	http://dev.markitondemand.com/Api/v2/Lookup/json?input=NFLX
