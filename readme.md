@@ -1,4 +1,4 @@
-This is an [Markit On Demand Json Api](http://http://dev.markitondemand.com//).
+This is the [Markit On Demand Json Api](http://dev.markitondemand.com/)
 
 
 Try to run this website locally under an HTTP Server 
